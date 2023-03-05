@@ -9,22 +9,25 @@ import {
   MDBInput,
   MDBIcon,
 } from "mdb-react-ui-kit";
-import logo from "../img/logo.png";
-
 import "./LoginPage.css";
+import logo from "../../img/logo.png";
 
 function LoginPage() {
   return (
     <MDBContainer fluid>
       <MDBRow className="d-flex justify-content-center align-items-center h-100">
         <MDBCol col="12">
-        
-
           <MDBCard
             className="bg-dark text-white my-5 mx-auto"
             style={{ borderRadius: "1rem", maxWidth: "400px" }}
           >
-          <img src={logo} alt="logo" width={250} height={250} style={{ alignSelf: 'center' }}/>
+            <img
+              src={logo}
+              alt="logo"
+              width={250}
+              height={250}
+              style={{ alignSelf: "center" }}
+            />
             <MDBCardBody className="p-5 d-flex flex-column align-items-center mx-auto w-100">
               <h2 className="fw-bold mb-2 text-uppercase">Login</h2>
               <p className="text-white-50 mb-5">
@@ -56,7 +59,6 @@ function LoginPage() {
               <MDBBtn outline className="mx-2 px-5" color="white" size="lg">
                 Login
               </MDBBtn>
-
 
               {/* removing logos since it is not a requirment(might add later) */}
               <div className="d-flex flex-row mt-3 mb-5">
