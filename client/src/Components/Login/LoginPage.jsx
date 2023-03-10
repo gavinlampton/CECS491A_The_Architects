@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {
   MDBBtn,
   MDBContainer,
@@ -13,6 +13,7 @@ import "./LoginPage.css";
 import logo from "../../img/logo.png";
 
 function LoginPage() {
+
   return (
     <MDBContainer fluid>
       <MDBRow className="d-flex justify-content-center align-items-center h-100">
@@ -41,6 +42,7 @@ function LoginPage() {
                 id="formControlLg"
                 type="email"
                 size="lg"
+                onChange={(e) => console.log(e.target.value)}
               />
               <MDBInput
                 wrapperClass="mb-4 mx-5 w-100"
