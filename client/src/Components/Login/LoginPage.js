@@ -94,7 +94,7 @@ function LoginPage() {
               <div>
                 <p className="mb-0">
                   Navigating to Customer Page?{" "}
-                  <a href="#!" class="text-white-50 fw-bold">
+                  <a href="/customerform" class="text-white-50 fw-bold">
                     Click here
                   </a>
                 </p>

@@ -5,6 +5,11 @@
   width: 40%;
 }
 
+/* this will reflect on whole website */
+body {
+    background-color: rgb(244, 240, 240);
+}
+
 .checkbox {
   margin-left: 1%;
   width: 70%;
