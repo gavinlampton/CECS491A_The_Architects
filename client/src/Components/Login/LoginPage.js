@@ -7,7 +7,6 @@ import {
   MDBCard,
   MDBCardBody,
   MDBInput,
-  MDBIcon,
 } from "mdb-react-ui-kit";
 import "./LoginPage.css";
 import logo from "../../img/logo.png";
@@ -15,7 +14,7 @@ import logo from "../../img/logo.png";
 function LoginPage() {
 
   return (
-    <MDBContainer fluid>
+    <MDBContainer fluid className='m-0 p-5 loginBody' >
       <MDBRow className="d-flex justify-content-center align-items-center h-100">
         <MDBCol col="12">
           <MDBCard

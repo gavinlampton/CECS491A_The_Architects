@@ -1,4 +1,4 @@
-body {
+.loginBody {
     /* fallback for old browsers */
     background: #6a11cb;
   
@@ -7,4 +7,5 @@ body {
   
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(90deg, rgba(135,36,40,1) 0%, rgba(215,30,30,1) 30%)
+    
   }
