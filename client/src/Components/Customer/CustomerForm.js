@@ -1,45 +1,67 @@
-import React from 'react';
+import React, { useState } from "react";
 import {
-  MDBRow,
-  MDBCol,
   MDBInput,
+  MDBCol,
+  MDBRow,
   MDBCheckbox,
-  MDBBtn
-} from 'mdb-react-ui-kit';
+  MDBBtn,
+} from "mdb-react-ui-kit";
 
-import './CustomerForm.css';
+import "./CustomerForm.css";
 
 const CustomerForm = () => {
-    return(
-        <form>
-      <MDBRow className='mb-4'>
-        <MDBCol>
-          <MDBInput id='form6Example1' label='First name' />
-        </MDBCol>
-        <MDBCol>
-          <MDBInput id='form6Example2' label='Last name' />
-        </MDBCol>
-      </MDBRow>
+  const [first, setFirst] = useState("");
+  const [last, setLast] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
 
-      <MDBInput wrapperClass='mb-4' id='form6Example3' label='Company name' />
-      <MDBInput wrapperClass='mb-4' id='form6Example4' label='Address' />
-      <MDBInput wrapperClass='mb-4' type='email' id='form6Example5' label='Email' />
-      <MDBInput wrapperClass='mb-4' type='tel' id='form6Example6' label='Phone' />
+  return (
+    <div className="form-body">
+      <h3>Please enter your details</h3>
+      <form>
+        <MDBInput
+          className="mb-4"
+          type="text"
+          id="form1Example1"
+          label="First Name"
+          value={first}
+          onChange={(e) => setFirst(e.target.value)}
+        />
+        <MDBInput
+          className="mb-4"
+          type="text"
+          id="form1Example1"
+          label="Last Name"
+          value={last}
+          onChange={(e) => setLast(e.target.value)}
+        />
+        <MDBInput
+          className="mb-4"
+          type="email"
+          id="form1Example1"
+          label="Email Address"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <MDBInput
+          className="mb-6"
+          type="text"
+          label="Phone Number"
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
+        />
 
-      <MDBInput wrapperClass='mb-4' textarea id='form6Example7' rows={4} label='Additional information' />
+        <MDBRow className="mb-6 checkbox">
+          <MDBCheckbox label="Sale Notifications" defaultChecked />
+          <MDBCheckbox label="New stock Notifications" defaultChecked />
+        </MDBRow>
 
-      <MDBCheckbox
-        wrapperClass='d-flex justify-content-center mb-4'
-        id='form6Example8'
-        label='Create an account?'
-        defaultChecked
-      />
-
-      <MDBBtn className='mb-4' type='submit' block>
-        Place order
-      </MDBBtn>
-    </form>
+        <MDBBtn type="submit" block>
+          Submit
+        </MDBBtn>
+      </form>
+    </div>
   );
-}
+};
 
 export default CustomerForm;

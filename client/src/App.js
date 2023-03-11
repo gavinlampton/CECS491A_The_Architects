@@ -12,6 +12,7 @@ import LoginPage from "./Components/Login/LoginPage";
 import CustomerForm from "./Components/Customer/CustomerForm";
 import Footer from "./Components/Footer/Footer";
 
+
 function App() {
   return (
     <Router>
