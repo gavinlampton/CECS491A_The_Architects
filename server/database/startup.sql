@@ -22,6 +22,18 @@ CREATE TABLE IF NOT EXISTS customer (
     CONSTRAINT customer_pk PRIMARY KEY (id)
 );
 
+-- customer table created by pal
+CREATE TABLE `customer_notifications`.`customer` (
+  `cust_id` INT NOT NULL AUTO_INCREMENT,
+  `first_name` VARCHAR(45) NOT NULL,
+  `last_name` VARCHAR(45) NOT NULL,
+  `email` VARCHAR(255) NOT NULL,
+  `phone_number` VARCHAR(12) NOT NULL,
+  `sale_notification` TINYINT(1) NOT NULL,
+  `newstock_notification` TINYINT(1) NOT NULL,
+  PRIMARY KEY (`cust_id`, `phone_number`),
+  UNIQUE INDEX `phone_number_UNIQUE` (`phone_number` ASC) VISIBLE);
+
 -- Table: login
 CREATE TABLE IF NOT EXISTS login (
     username varchar(20)  NOT NULL,

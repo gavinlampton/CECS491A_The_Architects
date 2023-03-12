@@ -13,11 +13,11 @@ const CustomerForm = () => {
   const [first, setFirst] = useState("");
   const [last, setLast] = useState("");
   const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
+  const [phone, setPhone] = useState("+1");
 
   return (
     <div className="form-body">
-      <h3>Please enter your details Faisal</h3>
+      <h3>Please enter your details</h3>
       <form>
         <MDBInput
           className="mb-4"
