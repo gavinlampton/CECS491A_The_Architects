@@ -1,7 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\client",
+    "\\client\\public",
+    "\\client\\src",
+    "\\client\\src\\Components",
+    "\\client\\src\\Components\\Customer",
+    "\\client\\src\\Components\\Footer",
+    "\\client\\src\\Components\\Login"
   ],
-  "SelectedNode": "\\C:\\Users\\Faisal\\Source\\Repos\\CECS491A_The_Architects",
+  "SelectedNode": "\\client\\public\\index.html",
   "PreviewInSolutionExplorer": false
 }
