@@ -16,9 +16,7 @@ import Footer from "./Components/Footer/Footer";
 function App() {
   return (
     <Router>
-      <main>
         <Switch>
-          
           <Route path="/customerform" exact>
             <CustomerForm />
           </Route>
@@ -26,11 +24,10 @@ function App() {
             <LoginPage />
             <Footer />
           </Route>
-          
           <Redirect to="/" />
           {/*if anything else is enter it will direct to loginpage(home route) */}
         </Switch>
-      </main>
+      
     </Router>
   );
 }
