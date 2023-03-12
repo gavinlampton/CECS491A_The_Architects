@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get("/", (req, res) => {
-    res.send('Welcome');
+    res.send('Welcome to home page!');
 });
 
 
@@ -10,5 +10,5 @@ app.get("/", (req, res) => {
 
 
 app.listen(3001, () => {
-    console.log("Server listening on 3001");
+    console.log("Server listening on 300sssss1");
 });
