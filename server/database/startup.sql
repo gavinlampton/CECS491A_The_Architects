@@ -32,7 +32,8 @@ CREATE TABLE `customer_notifications`.`customer` (
   `sale_notification` TINYINT(1) NOT NULL,
   `newstock_notification` TINYINT(1) NOT NULL,
   PRIMARY KEY (`cust_id`, `phone_number`),
-  UNIQUE INDEX `phone_number_UNIQUE` (`phone_number` ASC) VISIBLE);
+  UNIQUE INDEX `phone_number_UNIQUE` (`phone_number` ASC) VISIBLE
+);
 
 -- Table: login
 CREATE TABLE IF NOT EXISTS login (
