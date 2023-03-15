@@ -17,7 +17,7 @@ function App() {
   return (
     <Router>
         <Switch>
-          <Route path="/customerform" exact>
+          <Route path="/customer" exact>
             <CustomerForm />
           </Route>
           <Route path="/" exact>
