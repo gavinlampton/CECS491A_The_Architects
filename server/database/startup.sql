@@ -1,6 +1,6 @@
 -- Created by Vertabelo (http://vertabelo.com)
 -- Last modification date: 2023-03-12 01:08:16.81
-CREATE DATABASE IF NOT EXISTS test_db;
+CREATE DATABASE IF NOT EXISTS customer_notifications;
 
 
 -- tables
